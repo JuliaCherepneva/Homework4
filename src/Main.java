@@ -138,41 +138,57 @@ public class Main {
         }
 
         System.out.println("\nЗадание 6");
-        int people = 102;
-        if (people >= 102) {
-            System.out.println("Если в вагоне " + people + " человека, то в вагоне нет мест.");
-        } else if (people < 102 && people < 60) {
-            System.out.println("Если в вагоне " + people + " человека, то в вагоне есть сидячие места.");
-        } else if (people < 102 && people> 60) {
-            System.out.println("Если в вагоне " + people + ", человека, то в вагоне остались стоячие места.");
+        int totalPlace = 102;
+        int seat = 60;
+
+        int peopleInCarriage1 = 70;
+        boolean seatNo1 = peopleInCarriage1 < 102 && peopleInCarriage1 <= 60;
+        boolean seatPlace1 = peopleInCarriage1 < 102 && peopleInCarriage1 <= 60;
+        boolean standingPlace1 =   peopleInCarriage1 < 102  && peopleInCarriage1 >= 60;
+        if (seatNo1) {
+            System.out.println("Если в вагоне " + peopleInCarriage1 + " человек, то в вагоне мест нет.");
+        } else if (seatPlace1) {
+            System.out.println("Если в вагоне " + peopleInCarriage1 + " человек, то в вагоне есть сидячие места.");
+        } else if (standingPlace1) {
+            System.out.println("Если в вагоне " + peopleInCarriage1 + " человек, то в вагоне есть стоячие места.");
         }
-        int people2 = 42;
-        if (people2 >= 102) {
-            System.out.println("Если в вагоне " + people2 + " человека, то в вагоне мест нет.");
-        } else if (people2 < 102 && people2 < 60) {
-            System.out.println("Если в вагоне " + people2 + " человека, то в вагоне есть сидячие места.");
-        } else if (people2 < 102 && people2> 60) {
-            System.out.println("Если в вагоне " + people2 + ", человека, то в вагоне остались стоячие места.");
+
+        int peopleInCarriage2 = 45;
+        boolean seatNo2 = peopleInCarriage2 >= 102;
+        boolean seatPlace2 = peopleInCarriage2 < 102 && peopleInCarriage2 <= 60;
+        boolean standingPlace2 =   peopleInCarriage2 < 102  && peopleInCarriage2 >= 60;
+        if (seatNo2) {
+            System.out.println("Если в вагоне " + peopleInCarriage2 + " человек, то в вагоне мест нет.");
+        } else if (seatPlace2) {
+            System.out.println("Если в вагоне " + peopleInCarriage2 + " человек, то в вагоне есть сидячие места.");
+        } else if (standingPlace2) {
+            System.out.println("Если в вагоне " + peopleInCarriage2 + " человек, то в вагоне есть стоячие места.");
         }
-        int people3 = 84;
-        if (people3 >= 102) {
-            System.out.println("Если в вагоне " + people3 + " человека, то в вагоне мест нет.");
-        } else if (people3 < 102 && people3 < 60) {
-            System.out.println("Если в вагоне " + people3 + " человека, то в вагоне есть сидячие места.");
-        } else if (people3 < 102 && people3 > 60) {
-            System.out.println("Если в вагоне " + people3 + ", человека, то в вагоне остались стоячие места.");
+
+        int peopleInCarriage3 = 102;
+        boolean seatNo3 = peopleInCarriage3 >= 102;
+        boolean seatPlace3 = peopleInCarriage3 < 102 && peopleInCarriage3 <= 60;
+        boolean standingPlace3 =   peopleInCarriage3 < 102  && peopleInCarriage3 >= 60;
+        if (seatNo3) {
+            System.out.println("Если в вагоне " + peopleInCarriage3 + " человека, то в вагоне мест нет.");
+        } else if (seatPlace3) {
+            System.out.println("Если в вагоне " + peopleInCarriage3 + " человек, то в вагоне есть сидячие места.");
+        } else if (standingPlace3) {
+            System.out.println("Если в вагоне " + peopleInCarriage3 + " человек, то в вагоне есть стоячие места.");
         }
 
         System.out.println("\nЗадание 7");
-        int one = 1;
-        int two = 2;
-        int three = 3;
-
-        if (three > two && three > one) {
+        int one = 10;
+        int two = 20;
+        int three = 30;
+        boolean ThreeIsGreater  = three > two && three > one;
+        boolean TwoIsGreater  = two > three && two > one;
+        boolean OneIsGreater  = one > three && one > two;
+        if (ThreeIsGreater) {
             System.out.println(three);
-        } else if (two > three && two > one) {
+        } else if (TwoIsGreater) {
             System.out.println(two);
-        } else if (one > two && one > three) {
+        } else if (OneIsGreater) {
             System.out.println(one);
         }
     }
