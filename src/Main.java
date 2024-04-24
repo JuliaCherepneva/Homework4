@@ -6,15 +6,13 @@ public class Main {
         int ageKate = 21;
         if (ageKate >= 18) {
             System.out.println("Если возраст человека равен " + ageKate + ", то он совершеннолетний.");
-        }
-        if (ageKate < 18) {
+        } else {
             System.out.println("Если возраст человека равен " + ageKate + ", то он не достиг совершеннолетия, нужно немного подождать.");
         }
         int ageRoma = 17;
         if (ageRoma >= 18) {
             System.out.println("Если возраст человека равен " + ageRoma + ", то он совершеннолетний.");
-        }
-        if (ageRoma < 18) {
+        } else {
             System.out.println("Если возраст человека равен " + ageRoma + ", то он не достиг совершеннолетия, нужно немного подождать.");
         }
 
@@ -60,8 +58,7 @@ public class Main {
         }
         else if (ageMasha >= 18 && ageMasha <= 24) {
             System.out.println("Если возраст человека равен " + ageMasha+ ", то ему нужно ходить в университет.");
-        }
-        else if (ageMasha >= 24) {
+        } else {
             System.out.println("Если возраст человека равен " + ageMasha + ", то ему нужно ходить на работу.");
         }
         int ageAlex = 11;
@@ -73,8 +70,7 @@ public class Main {
         }
         else if (ageAlex >= 18 && ageAlex <= 24) {
             System.out.println("Если возраст человека равен " + ageAlex + ", то ему нужно ходить в университет.");
-        }
-        else if (ageAlex >= 24) {
+        } else {
             System.out.println("Если возраст человека равен " + ageAlex + ", то ему нужно ходить на работу.");
         }
         int agePavel = 21;
@@ -84,10 +80,9 @@ public class Main {
         else if (agePavel >= 7 && agePavel <= 17) {
             System.out.println("Если возраст человека равен " + agePavel + ", то ему нужно ходить в школу.");
         }
-        else if (agePavel>= 18 && agePavel <= 24) {
+        else if (agePavel >= 18 && agePavel <= 24) {
             System.out.println("Если возраст человека равен " + agePavel+ ", то ему нужно ходить в университет.");
-        }
-        else if (agePavel>= 24) {
+        } else {
             System.out.println("Если возраст человека равен " + agePavel + ", то ему нужно ходить на работу.");
         }
 
@@ -100,8 +95,7 @@ public class Main {
         }
         else if (ageDanya>= 18 && ageDanya <= 24) {
             System.out.println("Если возраст человека равен " + ageDanya+ ", то ему нужно ходить в университет.");
-        }
-        else if (ageDanya>= 24) {
+        } else {
             System.out.println("Если возраст человека равен " + ageDanya + ", то ему нужно ходить на работу.");
         }
 
@@ -142,38 +136,38 @@ public class Main {
         int seat = 60;
 
         int peopleInCarriage1 = 70;
-        boolean seatNo1 = peopleInCarriage1 < 102 && peopleInCarriage1 <= 60;
-        boolean seatPlace1 = peopleInCarriage1 < 102 && peopleInCarriage1 <= 60;
-        boolean standingPlace1 =   peopleInCarriage1 < 102  && peopleInCarriage1 >= 60;
-        if (seatNo1) {
+        boolean MaxPeople1 = peopleInCarriage1 >= 102;
+        boolean youCanSit1 = peopleInCarriage1 <= 60;
+        boolean youCanStand1 =   peopleInCarriage1 >= 60;
+        if (MaxPeople1) {
             System.out.println("Если в вагоне " + peopleInCarriage1 + " человек, то в вагоне мест нет.");
-        } else if (seatPlace1) {
+        } else if (youCanSit1) {
             System.out.println("Если в вагоне " + peopleInCarriage1 + " человек, то в вагоне есть сидячие места.");
-        } else if (standingPlace1) {
+        } else if (youCanStand1) {
             System.out.println("Если в вагоне " + peopleInCarriage1 + " человек, то в вагоне есть стоячие места.");
         }
 
         int peopleInCarriage2 = 45;
-        boolean seatNo2 = peopleInCarriage2 >= 102;
-        boolean seatPlace2 = peopleInCarriage2 < 102 && peopleInCarriage2 <= 60;
-        boolean standingPlace2 =   peopleInCarriage2 < 102  && peopleInCarriage2 >= 60;
-        if (seatNo2) {
+        boolean MaxPeople2 = peopleInCarriage2 >= 102;
+        boolean youCanSit2 = peopleInCarriage2 <= 60;
+        boolean youCanStand2 =   peopleInCarriage2 >= 60;
+        if (MaxPeople2) {
             System.out.println("Если в вагоне " + peopleInCarriage2 + " человек, то в вагоне мест нет.");
-        } else if (seatPlace2) {
+        } else if (youCanSit2) {
             System.out.println("Если в вагоне " + peopleInCarriage2 + " человек, то в вагоне есть сидячие места.");
-        } else if (standingPlace2) {
+        } else if (youCanStand2) {
             System.out.println("Если в вагоне " + peopleInCarriage2 + " человек, то в вагоне есть стоячие места.");
         }
 
         int peopleInCarriage3 = 102;
-        boolean seatNo3 = peopleInCarriage3 >= 102;
-        boolean seatPlace3 = peopleInCarriage3 < 102 && peopleInCarriage3 <= 60;
-        boolean standingPlace3 =   peopleInCarriage3 < 102  && peopleInCarriage3 >= 60;
-        if (seatNo3) {
+        boolean MaxPeople3 = peopleInCarriage3 >= 102;
+        boolean youCanSit3 = peopleInCarriage3 <= 60;
+        boolean youCanStand3 =   peopleInCarriage3 >= 60;
+        if (MaxPeople3) {
             System.out.println("Если в вагоне " + peopleInCarriage3 + " человека, то в вагоне мест нет.");
-        } else if (seatPlace3) {
+        } else if (youCanSit3) {
             System.out.println("Если в вагоне " + peopleInCarriage3 + " человек, то в вагоне есть сидячие места.");
-        } else if (standingPlace3) {
+        } else if (youCanStand3) {
             System.out.println("Если в вагоне " + peopleInCarriage3 + " человек, то в вагоне есть стоячие места.");
         }
 
@@ -181,14 +175,11 @@ public class Main {
         int one = 10;
         int two = 20;
         int three = 30;
-        boolean ThreeIsGreater  = three > two && three > one;
-        boolean TwoIsGreater  = two > three && two > one;
-        boolean OneIsGreater  = one > three && one > two;
-        if (ThreeIsGreater) {
+        if (three > two && three > one) {
             System.out.println(three);
-        } else if (TwoIsGreater) {
+        } else if (two > three && two > one) {
             System.out.println(two);
-        } else if (OneIsGreater) {
+        } else {
             System.out.println(one);
         }
     }
