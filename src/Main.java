@@ -138,7 +138,7 @@ public class Main {
         int peopleInCarriage1 = 70;
         boolean MaxPeople1 = peopleInCarriage1 >= 102;
         boolean youCanSit1 = peopleInCarriage1 <= 60;
-        boolean youCanStand1 =   peopleInCarriage1 >= 60;
+        boolean youCanStand1 =   peopleInCarriage1 >= 61 && peopleInCarriage1 <= 102;
         if (MaxPeople1) {
             System.out.println("Если в вагоне " + peopleInCarriage1 + " человек, то в вагоне мест нет.");
         } else if (youCanSit1) {
@@ -150,7 +150,7 @@ public class Main {
         int peopleInCarriage2 = 45;
         boolean MaxPeople2 = peopleInCarriage2 >= 102;
         boolean youCanSit2 = peopleInCarriage2 <= 60;
-        boolean youCanStand2 =   peopleInCarriage2 >= 60;
+        boolean youCanStand2 =   peopleInCarriage2 >= 60 && peopleInCarriage1 <= 102;
         if (MaxPeople2) {
             System.out.println("Если в вагоне " + peopleInCarriage2 + " человек, то в вагоне мест нет.");
         } else if (youCanSit2) {
@@ -162,7 +162,7 @@ public class Main {
         int peopleInCarriage3 = 102;
         boolean MaxPeople3 = peopleInCarriage3 >= 102;
         boolean youCanSit3 = peopleInCarriage3 <= 60;
-        boolean youCanStand3 =   peopleInCarriage3 >= 60;
+        boolean youCanStand3 =   peopleInCarriage3 >= 60 && peopleInCarriage1 <= 102;
         if (MaxPeople3) {
             System.out.println("Если в вагоне " + peopleInCarriage3 + " человека, то в вагоне мест нет.");
         } else if (youCanSit3) {
